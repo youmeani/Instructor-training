@@ -6,6 +6,12 @@
   <meta name="theme-color" content="#fff9f6" />
   <meta name="description" content="시험 보강·보충 알림부터 AI 정기 피드백, 출석·시간표, 학생 관리까지. 유미니 강사 실전 활용 교육. 10월 20일 오후 2시 ZOOM LIVE" />
   <title>유미니 강사 실전 활용 교육 | 신청</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="유미니 강사 실전 활용 교육 · ZOOM LIVE" />
+  <meta property="og:description" content="보강·보충 안내부터 정기 피드백, 학생 관리까지. 유미니 강사 교육 신청" />
+  <meta property="og:url" content="https://youmeani.github.io/Instructor-training/" />
+  <meta property="og:image" content="https://youmeani.github.io/Instructor-training/youmeani-thumbnail.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <style>
     :root { --ink:#302a31; --muted:#827880; --pink:#f46a8e; --border:#eadfe3; --bg:#fff9f6; }
     *{box-sizing:border-box} body{margin:0;background:linear-gradient(160deg,#fff7ef,#fffafd 65%,#fdf3f5);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;line-height:1.55}
@@ -29,9 +35,9 @@
       <p class="headline-accent">시험 끝난 지금, 강사님이 꼭 알아야 할 기능!</p>
       <h1><strong>시험 보강·보충 알림,</strong><br />아직도 따로 작성해서 보내세요?</h1>
       <p class="intro">알림톡 앱을 따로 열고, 안내 문구를 복사해 붙여넣고 계신가요?<br />유미니에서는 <strong>보강·보충·휴강 일정을 등록하고, 시간표에 반영한 뒤 학부모 안내까지</strong> 이어갈 수 있어요.<br /><br /><strong>피드백부터 출석, 시간표, 학생 관리까지.</strong> 강사님이 매일 쓰는 기능을 이번 교육에서 한 번에 배워보세요!</p>
-      <div class="details"><span>📅 2026년 10월 20일(화)</span><span>🕑 오후 2시</span><span>💻 온라인 ZOOM</span></div>
-      <!-- 전달해 주신 유미니 썸네일을 같은 폴더에 'youmeani-thumbnail.png'로 저장하면 자동 표시됩니다. -->
-      <img id="thumbnail" class="thumbnail" src="youmeani-thumbnail.png" alt="유미니 교육 안내 썸네일" hidden />
+      <div class="details"><span>📅 2026년 10월 27일(화)</span><span>🕑 오후 2시-4시</span><span>💻 온라인 ZOOM</span></div>
+      <!-- 전달해 주신 유미니 썸네일을 같은 폴더에 'youmeani-thumbnail.jpg'로 저장하면 자동 표시됩니다. -->
+      <img id="thumbnail" class="thumbnail" src="youmeani-thumbnail.jpg" alt="유미니 교육 안내 썸네일" loading="eager" />
     </section>
     <section class="section">
       <h2>유미니, 강사님은 이렇게 활용할 수 있어요</h2>
@@ -70,8 +76,7 @@
     const submitBtn = document.getElementById('submitBtn');
     const msg = document.getElementById('message');
     const thumbnail = document.getElementById('thumbnail');
-    thumbnail.onload = () => { thumbnail.hidden = false; };
-    thumbnail.onerror = () => { thumbnail.hidden = true; };
+
     document.getElementById('phone').addEventListener('input', e => {
       const d = e.target.value.replace(/\D/g,'').slice(0,11);
       e.target.value = d.length > 7 ? `${d.slice(0,3)}-${d.slice(3,d.length-4)}-${d.slice(-4)}` : d.length > 3 ? `${d.slice(0,3)}-${d.slice(3)}` : d;
